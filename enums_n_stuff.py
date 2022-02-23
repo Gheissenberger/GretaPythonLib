@@ -52,7 +52,9 @@ def main():
 
     # You can iterate through an Enum and get the full object, with a name and value
     for queer_eye_guy in QueerEyeGuy:
-        print(f"So {queer_eye_guy.name} is number {queer_eye_guy.value}, which is SO PERFECT!")
+        print(
+            f"So {queer_eye_guy.name} is number {queer_eye_guy.value}, which is SO PERFECT!"
+        )
 
     # An enum has members, too which, actually, might be easier
     print("But honestly they are all so great.")
@@ -61,7 +63,7 @@ def main():
 
     # You can refer to Enum members individually by name a couple of ways.
     cast_member_with_least_screen_time = QueerEyeGuy.BOBBY
-    cast_member_who_works_the_most_hours = QueerEyeGuy['BOBBY']
+    cast_member_who_works_the_most_hours = QueerEyeGuy["BOBBY"]
     if cast_member_with_least_screen_time == cast_member_who_works_the_most_hours:
         print("Ugh Bobby works so hard but they don't show it!")
 
@@ -79,8 +81,10 @@ def main():
     try:
         stan("Eminem")
     except TypeError as err:
-        print(f"""Um, Honey, I don't want to tell you how to write your code but... you just got an exception:
-        {err}""")
+        print(
+            f"""Um, Honey, I don't want to tell you how to write your code but... you just got an exception:
+        {err}"""
+        )
 
     # I hope you learn to love the Enum class as much as JVM loves powdered doughnuts!
 
